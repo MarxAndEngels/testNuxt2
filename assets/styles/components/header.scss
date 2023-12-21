@@ -20,6 +20,13 @@
   height: 56px;
   align-items: center;
   gap: 8px;
+  // border-top: 1px solid $color-black;
+  // border-bottom: 1px solid $color-black;
+}
+
+.header__top{
+  border-top: 1px solid $color-form;
+  border-bottom: 1px solid $color-form;
 }
 
 .header__marks-icon {

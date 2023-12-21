@@ -9,7 +9,7 @@
 }
 
 .slider-connect {
-  background: $color-red !important;
+  background: $color-main !important;
 }
 
 .slider-horizontal .slider-handle {
@@ -17,7 +17,7 @@
   height: 32px !important;
   top: -13px !important;
   border: 4px solid #fff;
-  background: $color-red !important;
+  background: $color-main !important;
   box-shadow: none !important;
   z-index: 10;
   right: calc(var(--slider-handle-width, 32px) / 2 * -1) !important;

@@ -31,6 +31,7 @@
 
 .buy__options-price--actual {
   color: $color-red;
+  font-weight: 900;
 }
 
 .buy__options-price--old {
@@ -40,7 +41,7 @@
 .buy__options-credit {
   text-align: center;
   font-size: 14px;
-  color: $color-red;
+  color: $color-main;
 }
 
 .buy__options-credit span {
@@ -75,6 +76,7 @@
 .buy__options-buttons {
   display: flex;
   gap: 8px;
+  margin-top: 12px;
 }
 
 .buy__options-buttons .button {

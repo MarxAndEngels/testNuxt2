@@ -105,7 +105,7 @@ import {sendNewFeedback} from '~/helpers/request'
 const modalOffer = computed(() => <ModalOfferType>useModals().modalOffer)
 
 let payment = ref(10)
-let period = ref(84)
+let period = ref(96)
 const router = useRouter()
 let total = ref()
 total.value = calculate(modalOffer.value?.price, payment.value, period.value)

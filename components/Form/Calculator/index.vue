@@ -12,7 +12,7 @@
         <div class="calculator__slider-steps calculator__slider-steps-period"
              :class="{ 'calculator__slider-steps-period--installment': installment }">
           <div v-if="installment" class="calculator__slider-step" v-for="i in 7"></div>
-          <div v-else class="calculator__slider-step" v-for="i in 9"></div>
+          <div v-else class="calculator__slider-step" v-for="i in 10"></div>
         </div>
       </div>
     </div>
@@ -72,14 +72,15 @@ const periodOptions = computed(() => {
       snap: true,
       range: {
         'min': 2,
-        '12.5%': 6,
-        '25%': 12,
-        '37.5%': 24,
-        '50%': 36,
-        '62,.5%': 48,
-        '74.5%': 60,
-        '87%': 72,
-        'max': 84
+        '11%': 6,
+        '22%': 12,
+        '33%': 24,
+        '44.5%': 36,
+        '55.5%': 48,
+        '66.5%': 60,
+        '77.5%': 72,
+        '88.5%': 84,
+        'max': 96
       }
     }
   }

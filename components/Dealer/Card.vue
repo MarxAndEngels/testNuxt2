@@ -1,5 +1,5 @@
 <template>
-  <div class="dealer__card">
+  <!-- <div class="dealer__card">
     <div class="dealer__card-title">{{ mainDomain.title }}</div>
     <div class="dealer__card-info">
       <div class="dealer__card-info-line" v-if="settings.contact_phone">
@@ -16,7 +16,7 @@
       </div>
     </div>
     <img class="dealer__card-photo" src="/img/slider/about/slide-1@1x-mobile.webp" alt="dealer">
-  </div>
+  </div> -->
 </template>
 <script setup lang="ts">
 import {useSiteConfig} from "~/store/siteConfig";

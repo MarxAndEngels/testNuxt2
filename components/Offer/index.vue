@@ -19,12 +19,12 @@
       <DealerCard/>
     </div>
     <div class="grid__right" v-if="isDesktop">
-      <Tech :tech="currentTech" view="inline"/>
       <div class="grid__sticky">
         <BuyOptions :active="offer.is_active" @on-credit="onCredit"
                     @on-exchange="onExchange" :price="offer.price" :price-old="offer.price_old"
                     type="offer"/>
       </div>
+      <Tech :tech="currentTech" view="inline"/>
     </div>
   </section>
 </template>

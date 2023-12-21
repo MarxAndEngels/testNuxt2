@@ -25,7 +25,8 @@
 
 .mini-card__folder-prices {
   color: $color-red;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 900;
   font-family: $fontFamilyBold, $fontApple;
   margin-bottom: 12px;
 }
@@ -92,6 +93,7 @@
   font-size: 16px;
   font-family: $fontFamilyBold, $fontApple;
   text-decoration: none;
+  font-weight: 900;
   color: $color-black;
   display: block;
 }
@@ -99,9 +101,10 @@
 .mini-card__offer-prices {
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 18px;
   gap: 16px;
   font-family: $fontFamilyBold, $fontApple;
+  font-weight: 900;
   margin-top: 8px;
 }
 
@@ -112,6 +115,8 @@
 .mini-card__offer-price--old {
   text-decoration: line-through;
   color: $color-black;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .mini-card__offer-slider {
@@ -158,6 +163,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .button--card-credit{
+    width: 100%;
+  }
 }
 
 .mini-card__offer-stock {
@@ -168,7 +176,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 16px;
+  border-radius: 0px;
   right: 0;
   top: 88px;
   z-index: 2;

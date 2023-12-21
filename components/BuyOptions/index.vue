@@ -10,7 +10,14 @@
         <div v-if="active" class="buy__options-credit">от {{ creditPrice(price) }} ₽/месяц
           <span> без взноса </span>
         </div>
+
+        <div class="buy__options-buttons" v-if="active">
+      <button @click="onCredit" class="button button--active">Купить в кредит</button>
+      <button @click="onExchange" class="button button--trade-in">Trade-In с выгодой</button>
+    </div>
       </div>
+
+
       <div class="buy__options-bottom">
         <nuxt-icon name="checked" v-if="active"/>
         <div class="buy__options-dealer" v-if="active">
@@ -21,10 +28,6 @@
         <div v-if="!active">Нет в наличии</div>
         <div class="button button--callback" @click="onCallback">Обратный звонок</div>
       </div>
-    </div>
-    <div class="buy__options-buttons" v-if="active">
-      <button @click="onCredit" class="button button--active">Купить в кредит</button>
-      <button @click="onExchange" class="button button--trade-in">Trade-In с выгодой</button>
     </div>
     <!--    <div class="buy__options-buttons" v-else>-->
     <!--      <button @click="onCallback" class="button button&#45;&#45;active">Оставить заявку</button>-->

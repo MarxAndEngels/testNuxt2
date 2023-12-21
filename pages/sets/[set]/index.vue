@@ -1,14 +1,14 @@
 <template>
-  <div class="section section--margin-40">
+  <div>
     <div class="container">
-      <Filters type="new" class="catalog__filters" :class="{'catalog__filters--hidden':catalogMenu}"/>
+      <!-- <Filters type="new" class="catalog__filters" :class="{'catalog__filters--hidden':catalogMenu}"/> -->
       <h1 class="heading heading--h1 heading--h1-primary heading--h1-primary--opacity heading--h1-primary--nowrap">
         {{ seoTags.h1 }}</h1>
       <ListMarks/>
       <Catalog/>
     </div>
-    <BannersCredit/>
-    <SectionPromotions/>
+    <!-- <BannersCredit/>
+    <SectionPromotions/> -->
   </div>
 </template>
 

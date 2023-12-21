@@ -13,13 +13,14 @@
                            :dop-price="dopSum"/>
     </div>
     <div class="grid__right" v-if="isDesktop">
-      <Tech view="inline" :tech="currentTech"/>
       <div class="grid__sticky">
         <FolderBonuses v-if="folder.availability" @change-bonuses="changeBonuses" :difference="difference"/>
         <BuyOptions :active="folder.availability" @on-credit="onCredit" @on-exchange="onExchange" :price="currentPrice"
                     :price-old="chosenComplectation.price_old"
                     type="folder"/>
       </div>
+      <Tech view="inline" :tech="currentTech"/>
+
     </div>
   </section>
   <SkeletonFolderPage v-else/>

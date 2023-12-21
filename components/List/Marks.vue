@@ -4,8 +4,13 @@
       <nuxt-link class="list__tab list__tab--mark" @click.native="$emit('click')" :to="`/new/${item.slug}`"
         :title="item.title" :class="{ 'list__tab--active': $route.params.mark === item.slug }"
         v-for="item in sortedMarks" :key='item.id'>
+        <nuxt-icon class="list__tab_icon" :name="`emblems/${item.slug}`" />
+        <div class="list__tab_wrapper">
         <span class="list__tab-name">{{ item.title }}</span>
-        <nuxt-icon :name="`emblems/${item.slug}`" />
+        <span class="list__tab-descr">Моделей {{ item.folders.length }}</span>
+       </div>
+
+
       </nuxt-link>
     </div>
     <div class="button button--more" v-if="!modal" @click="full = !full">

@@ -11,11 +11,6 @@
       <ListMarks/>
       <div class="container__block">
         <h2 class="heading heading--h2">
-          Акции и спецпредложения</h2>
-        <Actions/>
-      </div>
-      <div class="container__block">
-        <h2 class="heading heading--h2">
           Последние поступления
         </h2>
         <CatalogNewHome/>
@@ -25,6 +20,11 @@
           Популярные модели
         </h2>
         <CatalogFoldersHome/>
+      </div>
+      <div class="container__block">
+        <h2 class="heading heading--h2">
+          Акции и спецпредложения</h2>
+        <Actions/>
       </div>
       <section class="page-main__banner-promo banner-promo">
         <div class="banner-promo__coop">

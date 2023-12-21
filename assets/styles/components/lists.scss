@@ -58,12 +58,13 @@
 
 .list__tab {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   border: 1px solid $color-border;
   border-radius: 6px;
   white-space: nowrap;
   padding: 8px 16px;
+  gap: 16px;
   text-decoration: none;
   width: calc(50% - 4px);
   font-size: 14px;
@@ -107,6 +108,21 @@
   width: calc(50% - 4px);
 }
 
+.list__tab_wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.list__tab-descr{
+  font-size: 12px;
+  color: $color-black;
+}
+
+.list__tab_icon{
+  width: 32px !important;
+  height: 32px !important;
+}
+
 .list__tab-name {
   color: $color-text;
   white-space: nowrap;
@@ -114,13 +130,16 @@
   text-overflow: ellipsis;
 }
 
-.list__tab--active .list__tab-name {
-  color: $color-red;
+.list__tab--active{
+  background: $color-bg-grey-hover;
 }
+// .list__tab--active .list__tab--mark {
+//   background: $color-red;
+// }
 
-.list__tab--active .list__tab-number {
-  color: $color-red;
-}
+// .list__tab--active .list__tab-number {
+//   color: $color-red;
+// }
 
 
 .list__tab-number {
@@ -147,6 +166,12 @@
     border-radius: $border-radius;
     box-shadow: $box-shadow;
     margin-bottom: 16px;
+
+    overflow: hidden; /* Fix for firefox and IE 10-11  */
+-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+page-break-inside: avoid; /* Firefox */
+break-inside: avoid; /* IE 10+ */
+break-inside: avoid-column;
   }
   .list__header {
     display: flex;
@@ -195,7 +220,9 @@
     transition: .24s ease-in-out;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 8px 24px;
+    justify-content: flex-start;
+    padding: 8px 14px;
+    gap: 16px;
+    border: 1px solid $color-form;
   }
 }

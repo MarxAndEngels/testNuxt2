@@ -67,14 +67,24 @@
   position: absolute;
   width: 100%;
   left: 0;
-  top: 24px;
+  top: 8px;
   background: $color-white;
   height: calc(100% - 80px);
   padding: 0 16px;
   z-index: 2;
   box-shadow: $box-shadow;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+  border-radius: 16px;
+  height: auto;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 4px;
+    background-color: $color-bg-grey;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color-grey-dark;
+    border-radius: 2px;
+  }
 }
 
 .modal__head {
@@ -109,6 +119,7 @@
 
 .modal__offer-title {
   margin-bottom: 12px;
+  font-weight: 900;
   font-family: $fontFamilyBold, $fontApple;
 }
 
@@ -127,6 +138,7 @@
 .modal__offer-price {
   color: $color-red;
   font-size: 16px;
+  font-weight: 900;
 }
 
 .modal__offer-price-credit {

@@ -13,6 +13,7 @@ import {filterNewGql, OfferFilterNewDataType, OfferFilterNewInputType} from "~/a
 export const request = async <Response, Request = undefined>(query: DocumentNode, variables?: Request, isNewApi?: boolean, isLazy?: boolean) => {
     let siteId = null
     let clientId = 'default'
+    siteId = 173
     if (isNewApi) {
         clientId = 'new'
         siteId = 1
